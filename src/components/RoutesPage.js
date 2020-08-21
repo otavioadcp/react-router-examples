@@ -48,7 +48,6 @@ export default function RoutesPage() {
       >
         Route
       </Button>
-      <Button className="route-button ">Route</Button>
 
       <div className="routesPage">
         <Switch>
