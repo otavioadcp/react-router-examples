@@ -62,7 +62,7 @@ function ThirdExample({ location }) {
 
   return (
     <div className="Page">
-      <p>Third</p>
+      <p>Third: Transitions</p>
       <div className="thirdExampleLink">
         <Link className="thirdExampleLink" to={`${url}/pages/page1`}>
           <Button>Page 1</Button>
