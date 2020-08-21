@@ -7,7 +7,7 @@ import RoutesPage from "./components/RoutesPage";
 function App() {
   return (
     <div className="App">
-      <h1 className="pageTitle"> Exemplos:</h1>
+      <h1 className="pageTitle"> Examples:</h1>
       <h2 className="pageSubtitle">react-router-dom</h2>
       <Router>
         <RoutesPage />

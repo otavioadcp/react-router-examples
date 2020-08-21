@@ -5,8 +5,7 @@ export default function FirstExample() {
   return (
     <div className="Page">
       {" "}
-      <h1> Ok!</h1>
-      <p> First Example</p>
+      <p> First Example: Basic</p>
     </div>
   );
 }

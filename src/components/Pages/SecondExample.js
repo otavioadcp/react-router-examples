@@ -69,7 +69,7 @@ export default function SecondExample() {
 
   return (
     <div className="Page">
-      <p> Second Example </p>
+      <p> Second Example: Nested Routes </p>
       <ul>
         {posts.map((post) => {
           return (
