@@ -2,7 +2,13 @@ import React from "react";
 import "./RoutesPage.css";
 import { Route, useHistory, Switch } from "react-router-dom";
 import { Button } from "antd";
-import { NotFound, HomePage, SecondExample, FirstExample } from "./Pages";
+import {
+  NotFound,
+  HomePage,
+  SecondExample,
+  FirstExample,
+  ThirdExample,
+} from "./Pages";
 
 export default function RoutesPage() {
   let history = useHistory();
@@ -29,6 +35,12 @@ export default function RoutesPage() {
       >
         Route 2
       </Button>
+      <Button
+        className="route-button"
+        onClick={() => handleClick("/thirdExample")}
+      >
+        Route 3
+      </Button>
 
       <Button
         className="route-button"
@@ -49,6 +61,11 @@ export default function RoutesPage() {
           <Route path="/secondExample">
             <SecondExample />
           </Route>
+
+          <Route path="/thirdExample">
+            <ThirdExample />
+          </Route>
+
           <Route path="*">
             <NotFound />
           </Route>

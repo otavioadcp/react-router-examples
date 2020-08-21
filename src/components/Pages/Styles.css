@@ -69,3 +69,70 @@ a:hover {
 .links {
   padding-left: 1rem;
 }
+
+.thirdExampleButton {
+  margin: 0px 5px;
+}
+
+.thirdExampleLink {
+  display: flex;
+  justify-content: center;
+  margin: 0px 5px;
+}
+
+.thirdExampleContainer {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  align-self: center;
+}
+
+.thirdExamplePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.cssContainer {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+}
+
+section.route-section {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+div.transition-group {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+}
+
+.ant-slider-track {
+  background-color: rgb(109, 108, 111) !important;
+}
+
+.ant-slider-rail {
+  border: solid 2px rgb(109, 108, 111);
+  opacity: 0.2;
+}
+
+.ant-slider-handle {
+  border: solid 2px rgb(109, 108, 111);
+}
+
+.ant-slider-handle:focus {
+  border: solid 2px rgb(109, 108, 111);
+}
+
+.ant-slider-handle.ant-tooltip-open {
+  border-color: rgb(109, 108, 111) !important;
+}
