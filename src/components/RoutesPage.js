@@ -1,6 +1,6 @@
 import React from "react";
 import "./RoutesPage.css";
-import { Route, useHistory, Switch } from "react-router-dom";
+import { Route, useHistory, Switch, Link } from "react-router-dom";
 import { Button } from "antd";
 import {
   NotFound,
@@ -8,7 +8,23 @@ import {
   SecondExample,
   FirstExample,
   ThirdExample,
+  FourthExample,
 } from "./Pages";
+
+const fourthExampleData = [
+  {
+    id: "firstData",
+    title: "First Data Title",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+  },
+  {
+    id: "secondData",
+    title: "Second Data Title",
+    description:
+      "Second data example of description. This isn't a 'Lorem ipsum' because... just isn't. ",
+  },
+];
 
 export default function RoutesPage() {
   let history = useHistory();
@@ -16,6 +32,7 @@ export default function RoutesPage() {
   const handleClick = (url) => {
     history.push(url);
   };
+
   return (
     <>
       <div>
@@ -27,21 +44,30 @@ export default function RoutesPage() {
         className="route-button"
         onClick={() => handleClick("/firstExample")}
       >
-        Route 1
+        Example 1
       </Button>
       <Button
         className="route-button"
         onClick={() => handleClick("/secondExample")}
       >
-        Route 2
+        Example 2
       </Button>
       <Button
         className="route-button"
         onClick={() => handleClick("/thirdExample")}
       >
-        Route 3
+        Example 3
       </Button>
-
+      <Link
+        className="customLink"
+        key="fourthExample"
+        to={{
+          pathname: "/fourthExample",
+          state: { fourthExampleData },
+        }}
+      >
+        <Button className="route-button">Example 4</Button>
+      </Link>
       <Button
         className="route-button"
         onClick={() => handleClick("/sdadadasdas")}
@@ -63,6 +89,10 @@ export default function RoutesPage() {
 
           <Route path="/thirdExample">
             <ThirdExample />
+          </Route>
+
+          <Route path="/fourthExample">
+            <FourthExample />
           </Route>
 
           <Route path="*">
